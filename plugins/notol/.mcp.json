@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "notol": {
+      "command": "npx",
+      "args": ["-y", "@notol/mcp@0.1.3"],
+      "env": {
+        "NOTOL_API_URL": "https://api.notol.app"
+      }
+    }
+  }
+}
