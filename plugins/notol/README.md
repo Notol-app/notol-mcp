@@ -4,13 +4,13 @@ Adds the Notol MCP server in check-only mode: a free payee check an agent can ru
 
 ## What it runs
 
-`.mcp.json` starts one local stdio server: `npx -y @notol/mcp@0.1.3`, pinned to that exact version. The package ships an `npm-shrinkwrap.json`, so its whole dependency tree is pinned too.
+`.mcp.json` starts one local stdio server: `npx -y @notol/mcp@0.1.4`, pinned to that exact version. The package ships an `npm-shrinkwrap.json`, so its whole dependency tree is pinned too.
 
 It runs with one setting, `NOTOL_API_URL=https://api.notol.app`. There is no key, no credential and no wallet: in this mode the server registers only two read-only tools, `notol_check_payee` and `notol_transfer_status`, and cannot move money.
 
 ## What it sends and fetches
 
-- **npm registry** (`registry.npmjs.org`): `npx` downloads `@notol/mcp@0.1.3` and its pinned dependencies the first time it starts.
+- **npm registry** (`registry.npmjs.org`): `npx` downloads `@notol/mcp@0.1.4` and its pinned dependencies the first time it starts.
 - **Notol api** (`https://api.notol.app`): each `notol_check_payee` call sends the sender address and the recipient address (public chain addresses) plus `client=mcp`; each `notol_transfer_status` call sends a transfer id. The api's check counter stores only a daily count per client kind, not the addresses; like any web service, its request logs can include the request URL.
 
 Nothing else is contacted. The server logs to stderr only, and never logs a key or a link.

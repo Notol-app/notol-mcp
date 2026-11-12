@@ -12,7 +12,7 @@
       "name": "notol",
       "source": "./plugins/notol",
       "description": "Free payee check for AI agents paying USDC: flags lookalike, reserved and own addresses. Check-only, no key needed.",
-      "version": "0.1.3",
+      "version": "0.1.4",
       "homepage": "https://www.notol.app/docs#mcp",
       "license": "MIT",
       "keywords": ["mcp", "payments", "usdc", "stablecoin", "agent", "payee-verification", "address-poisoning", "arc"]

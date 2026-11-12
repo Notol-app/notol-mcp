@@ -13,7 +13,7 @@ Any MCP client (Claude Desktop `claude_desktop_config.json`, a project `.mcp.jso
   "mcpServers": {
     "notol": {
       "command": "npx",
-      "args": ["-y", "@notol/mcp@0.1.3"],
+      "args": ["-y", "@notol/mcp@0.1.4"],
       "env": {
         "NOTOL_API_URL": "https://api.notol.app",
         "NOTOL_SENDER": "0xYOUR_PAYING_WALLET_ADDRESS"
@@ -53,7 +53,7 @@ Limits:
 ## Give your agent a wallet (optional)
 
 ```
-npx @notol/mcp@0.1.3 init --owner 0xYOUR_WALLET
+npx @notol/mcp@0.1.4 init --owner 0xYOUR_WALLET
 ```
 
 This creates the agent's key in a local file (`~/.notol/agent-5042.json`, readable only by you) and prints its address and a config snippet. Notol never sees the key. A new wallet holds 0: it can receive USDC right away and pay once funded. `notol_withdraw` sends funds back to the owner address only. The key file is the only copy, and any process running as you can read it: keep only what you can lose in it. Details: https://www.notol.app/docs#mcp

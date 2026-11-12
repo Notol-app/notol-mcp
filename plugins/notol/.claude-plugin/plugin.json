@@ -1,6 +1,6 @@
 {
   "name": "notol",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Free payee check for AI agents paying USDC: flags lookalike, reserved and own addresses. Check-only, no key needed.",
   "author": {
     "name": "Notol",
