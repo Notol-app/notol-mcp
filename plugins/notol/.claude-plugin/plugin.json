@@ -7,6 +7,7 @@
     "url": "https://www.notol.app"
   },
   "homepage": "https://www.notol.app/docs#mcp",
+  "repository": "https://github.com/Notol-app/notol-mcp",
   "license": "MIT",
   "keywords": ["mcp", "payments", "usdc", "stablecoin", "agent", "payee-verification", "address-poisoning", "arc"]
 }
