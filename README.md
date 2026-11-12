@@ -2,7 +2,7 @@
 
 An agent that pays a pasted or historical address cannot tell a lookalike from the real one (address poisoning). [`@notol/mcp`](https://www.npmjs.com/package/@notol/mcp) is a local MCP server that checks a payee before the agent pays USDC on Arc. The check is free and needs no key and no funds.
 
-This repository holds the listing: this README, the Claude Code plugin and its marketplace file. The server ships on npm as a bundled build; its source is not in this repository. Docs: https://www.notol.app/docs#mcp · Agent-readable docs: https://www.notol.app/llms.txt
+This repository holds the listing: this README, the Claude Code plugin and its marketplace file, and the same check-only server as an [Agent Plugins](https://agent-plugins.org) plugin at the root (`plugin.json`, `mcp.json`). The server ships on npm as a bundled build; its source is not in this repository. Docs: https://www.notol.app/docs#mcp · Agent-readable docs: https://www.notol.app/llms.txt
 
 ## Add the check (no key, no funds)
 
