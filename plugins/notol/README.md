@@ -11,7 +11,7 @@ It runs with one setting, `NOTOL_API_URL=https://api.notol.app`. There is no key
 ## What it sends and fetches
 
 - **npm registry** (`registry.npmjs.org`): `npx` downloads `@notol/mcp@0.1.3` and its pinned dependencies the first time it starts.
-- **Notol api** (`https://api.notol.app`): each `notol_check_payee` call sends the sender address and the recipient address (public chain addresses) plus `client=mcp`; each `notol_transfer_status` call sends a transfer id. The api keeps only a daily count of checks per client kind, never the addresses.
+- **Notol api** (`https://api.notol.app`): each `notol_check_payee` call sends the sender address and the recipient address (public chain addresses) plus `client=mcp`; each `notol_transfer_status` call sends a transfer id. The api's check counter stores only a daily count per client kind, not the addresses; like any web service, its request logs can include the request URL.
 
 Nothing else is contacted. The server logs to stderr only, and never logs a key or a link.
 
